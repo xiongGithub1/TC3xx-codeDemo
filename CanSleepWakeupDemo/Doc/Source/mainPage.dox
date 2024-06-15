@@ -1,0 +1,29 @@
+/** 
+\defgroup IfxLld_Demo_CanSleepWakeup CAN SLEEP WAKEUP demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demonstrates the CAN wakeup mechanism.
+Following steps are performed:
+	-	CAN1 Node0 acts as a transmitter and CAN0 Node0 as receiver.
+	-	Both the CAN modules are clocked at slower speed.
+	-	CAN0 Node0 is programmed to set in Sleep mode if the corresponding processor CPU0 is set in sleep mode.
+	-	CPU0 is put to low power clocking mode (Pretended Networking).
+	-	STM module is configured to interrupt the processor after 1000 cycles.
+	-	The STM interrupt wakesup the processor inturn waking up the CAN reciever.
+	-	The CAN message is transmitted from  CAN1 Node0 to CAN0 Node0.
+	-	The RX interrupt is received at CAN1 Node0.
+
+The below pins should be externally connected on triboard.
+
+	CAN 0 Node 0: Tx pin P20_8 and Rx pin P20_7
+	CAN 1 Node 0: Tx pin P23_1 and Rx pin P23_0
+
+\par Hardware used
+MCMCAN0   and   MCMCAN1
+
+\par Tested on
+This demo application has been tested on the TC39xB triboard
+
+*/

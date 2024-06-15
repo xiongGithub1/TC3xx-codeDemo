@@ -1,0 +1,36 @@
+/** 
+\defgroup IfxLld_Demo_GtmTimPwmDemo Gtm Tim PWM Demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This Demo is an example of how to measure frequency and duty cycle of an incoming PWM waveform using TIM channel in TIM PWM measurement mode.
+
+
+\par Hardware used
+TC3xx Micro
+Support Board (Triboard)
+Jumper wire
+(optionally) DSO
+USB cable (for Hyperterminal connection)
+
+\par How to Run:
+1. Build the demo using Software Framework / BiFaces provided by Infineon.
+2. Flash the Code on to a TC3xx device which has GTM Tim / TOM channels
+3. Before run, connect (jump wire connect) the following ports on the Tri-board:
+        1. Port 2 pin 0   (GTM TIM input)
+        2. Port 10 pin 7  (GTM TOM output)
+        
+4. Open the Hyperterminal application to view the print messages comming from the DEMO (optional)
+OR
+5. Watch the "TimPwmDemo_Info" structure members (see header for type) in the debugger watch window for useful information.
+
+6.  You should expect to see the measured frequency as 100KHz, and the measured duty as 50%.
+    You can change the PWM duty and frequency from TOM by changing the following defines in the Demo_Illd/TimPwmDemo.c file, and by compiling:
+    TOM_PWM_OUTPUT_FREQUECY_HZ (frequency)
+    TOM_PWM_OUTPUT_DUTY_PERCENT (Duty)
+
+\par Tested on
+This demo application has been tested on the TC38x RTL simulation using iLLD version 1_0_1_3_0_POST_2 
+
+*/

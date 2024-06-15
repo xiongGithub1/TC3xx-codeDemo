@@ -1,0 +1,31 @@
+/** 
+\defgroup IfxLld_Demo_QspiEepromDemo Qspi connected to EEPROM demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo shows how to use the QSPI Master to write and read an external EEPROM.
+It features the following:
+- Initialization of the QSPI as Master
+- Transmit Write Enable Command to EEPROM and check the status of the EEPROM
+- Only If Write is enabled in the EEPROM, write 2 bytes to EEPROM memory
+- Read two bytes from same memory
+- If write operation was performed then verify the read data by comparing with the written data
+
+\par Hardware used
+Uses the QSPI0 (MASTER) and external EEPROM chip AT25160B
+
+Pin Connections:
+Triboard:                    Slave EEPROM:       
+QSPI0_SCLK - P20.11      ->      SCK
+QSPI0_MRST - P20.12      <-      SO
+QSPI0_MTSR - P20.14      ->      SI
+QSPI0_SLSO - P20.08      ->      CS
+VEXT(5V)				 ->		 VCC
+GND						 ->	     GND
+
+
+\par Tested on
+This demo application has been tested on the TC399B and TC387 Triboard with the iLLD version 1.0.1.9.5.
+
+*/

@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_AsclinAsc ASCLIN ASC demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo sends five words of data and receives it back using internal or external loopback through ASC interface
+- port pins used are Tx pin P15_0 and Rx pin P15_1
+- Data transfers happen through interrupts
+
+\par Hardware used
+Uses the ASCLIN1
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0. 
+*/

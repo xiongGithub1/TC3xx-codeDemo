@@ -1,0 +1,18 @@
+/** 
+\defgroup IfxLld_Demo_CanBssic CAN BASIC demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo sends two words of data and receives it back using external loopback from CAN0 Node0 to CAN1 Node0 through CAN interface
+- port pins used are 
+	CAN 0 Node 0: Tx pin P20_8 and Rx pin P20_7
+	CAN 1 Node 0: Tx pin P23_1 and Rx pin P23_0
+
+\par Hardware used
+MCMCAN0   and   MCMCAN1
+
+\par Tested on
+This demo application has been tested on the TC39xB triboard. 
+
+*/

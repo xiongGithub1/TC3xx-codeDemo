@@ -1,0 +1,17 @@
+/** 
+\defgroup IfxLld_Demo_DtsBasicDemo Dts Basic Demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo show how to use Die Temperature Sensor
+
+\par Hardware used
+Uses the Power Management module DTS
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0.
+
+
+*/
+

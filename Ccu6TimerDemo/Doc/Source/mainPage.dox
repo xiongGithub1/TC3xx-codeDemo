@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_Ccu6Timer CCU6 Timer demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo generates an interrupt at every period match on Timer block T13 
+- increments a counter at every interrupt
+
+\par Hardware used
+none
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0. 
+
+*/

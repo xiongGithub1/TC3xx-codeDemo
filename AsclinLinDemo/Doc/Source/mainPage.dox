@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_Asclin_Lin ASCLIN LIN demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo acts as Lin master to send 8 bytes of data to a slave device connected externally through LIN interface,
+- port pins used are Tx pin P15_0 and Rx pin P15_1
+- data transfers happen trough polling of status flags
+
+\par Hardware used
+ASCLIN1
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0. 
+*/

@@ -1,0 +1,29 @@
+/** 
+\defgroup IfxLld_Demo_HsslStreaming HSSL Streaming demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo sends a block of data from master to slave through streaming mode, it does the following
+- Inititalises HSSL and HSCT module.
+- Master interface sets its Tx and RX speed to High and sends interface commands to set the slave device speed to High
+- writes a data block in slave device at memory location starting from 0x70008000 through streaming mode transfer at high speed.
+- Master interface sets its Tx and RX speed to Low and sends interface commands to set the slave device speed to Low
+- writes a data block in slave device at memory location starting from 0x70008140 through streaming mode transfer at low speed.
+- Again writes a data block in slave device at memory location starting from 0x70008280 through streaming mode transfer at low speed.
+
+\par Hardware used
+Hssl cable
+
+\par Tested on
+This demo application is testing on TC39xB triboard .
+
+testing process
+1. build the demo app for master and flash it on a device
+2. build the demo app for by changing the code configuration to slave (in HsslStreamingDemo_init() API ) by selecting the interface mode option in configuration structure and flash it on another device.
+3. connect both the devices with special hssl cable
+4. Switch on the slave device first and then switch on the master device.
+5. At slave, the data can be viewed at the address mentioned during transmission (0x70008000, 0x70008140, 0x70008280)
+
+
+*/

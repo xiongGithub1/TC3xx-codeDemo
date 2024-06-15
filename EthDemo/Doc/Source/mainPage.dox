@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_Eth ETH demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo sends five packets of data, each packet containing 8 bytes and receives it back using internal loopback
+
+\par Hardware used
+none
+
+\par Tested on
+This demo application is not yet tested. 
+
+
+*/

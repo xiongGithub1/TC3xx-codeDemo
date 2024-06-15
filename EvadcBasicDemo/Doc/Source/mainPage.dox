@@ -1,0 +1,23 @@
+/** 
+\defgroup IfxLld_Demo_EvadcBasicDemo Evadc Basic Demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo show how to use Queue Source for conversion of particular channel
+Conversion for channel 0 to 3 of group0 has been carried out.
+\par Hardware used
+Uses the Evadc
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0
+
+Port Connections:
+EVADCG1.0-->AN8(VADCG0.0--> Group1.Channel0)
+EVADCG1.1-->AN9
+EVADCG1.2-->AN10
+EVADCG1.3-->AN11
+
+
+*/
+

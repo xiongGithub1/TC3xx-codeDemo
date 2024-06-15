@@ -1,0 +1,45 @@
+/** 
+\defgroup IfxLld_Demo_CanFilter CAN FILTER demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+ This application sends a series of messages from CAN1 Node0 to CAN0 Node0.
+ Filters are configured in CAN0 Node0. 
+ Messages storage with respect to filter configurations in CAN0 node0 are checked and verified.
+ 
+- port pins used are 
+	CAN 0 Node 0: Tx pin P20_8 and Rx pin P20_7
+	CAN 1 Node 0: Tx pin P23_1 and Rx pin P23_0
+  
+  These pins needs to be connected by an external wire/interface.
+  
+  Below is the result of example
+  
+  MessageId	Accept/ Reject	MatchingFilterelement	Stored in
+	0x014		Accept			Filter#1				FIF0
+	0x015		Accept			Filter#1				FIF0
+	0x016		Accept			Filter#1				FIF0
+	0x017		Reject			Filter#0				-
+	0x018		Reject			Filter#0				-
+	0x019		Reject			Filter#0				-
+	0x184		Accept			Filter#2				FIFO1
+	0x187		Accept			Filter#2				FIFO1
+	0x189		Accept			Filter#3				FIFO0
+	0x200		Accept			Filter#4				FIFO0
+	0x201		Reject			Filter#5				-
+	0x220		Accept			Filter#4				FIFO0
+	0x221		Reject			Filter#5				-
+	0x240		Accept			Filter#4				FIFO0
+	0x241		Reject			Filter#5				-
+	0x325		Accept			Filter#6				RXBUFFER#6
+	0x326		Accept			Filter#7				RXBUFFER#7
+	0x327		Accept			Non-Matching			FIFO1
+
+\par Hardware used
+MCMCAN0   and   MCMCAN1
+
+\par Tested on
+This demo application has been tested on the TC39xB triboard
+
+*/

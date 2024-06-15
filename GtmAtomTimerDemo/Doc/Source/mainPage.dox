@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_GtmAtomTimer Gtm Atom Timer demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo is generation a 1ms interrupt using the GTM ATOM to increment the counter of the global variable g_GtmAtomTimer.isrCounter.slotOneMs.
+
+
+\par Hardware used
+GTM ATOM
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0. 
+
+*/

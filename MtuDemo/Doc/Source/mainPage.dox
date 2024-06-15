@@ -1,0 +1,16 @@
+/** 
+\defgroup IfxLld_Demo_MtuDemo Mtu demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo show how to use the Mtu MBist operations.
+
+\par Hardware used
+Uses the Mtu
+
+\par Tested on
+This demo application has been tested on the TC39xB RTL simulation environment with the iLLD version 1.0.1.12.0.
+This demo can be verified by checking whether the Eray Output buffer, Input buffer, Message ram, Transient Buffer ram memories are cleared.
+
+*/
